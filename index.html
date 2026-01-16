@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Simao's Website</title>
-  </head>
-  <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
-    <h1>Hello, World!</h1>
-    <p>Welcome to my personal website hosted on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simao's Portfolio</title>
+    <style>
+        /* --- CSS STYLES (The Design) --- */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h1 { margin: 0; color: var(--primary-color); }
+        h2 { border-bottom: 2px solid var(--accent-color); display: inline-block; padding-bottom: 5px; margin-top: 40px;}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #2980b9; }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Simao's Portfolio</h1>
+        <p>Student | Developer | Creative</p>
+        <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Simao. I am passionate about technology and design. 
+                This is my personal corner of the internet where I share my work and thoughts.
+                (Click the "Edit" pencil in GitHub to change this text!)
+            </p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project-card">
+                <h3>My First Project</h3>
+                <p>A brief description of what this project does. Maybe it was a school assignment or a hobby project.</p>
+                <a href="#" style="color: var(--accent-color);">View Code &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Photography Collection</h3>
+                <p>A collection of photos I took during my travels in Europe.</p>
+                <a href="#" style="color: var(--accent-color);">View Gallery &rarr;</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Connect</h2>
+            <p>
+                <a href="https://github.com/simao-f" target="_blank">GitHub Profile</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Simao. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
 </html>
